@@ -10,6 +10,20 @@
 *.userosscache
 *.sln.docstates
 
+# Ignore everything
+*
+
+# Allow only specific folders
+!backend/
+!backend/**
+!core/
+!core/**
+!graphicsHandler/
+!graphicsHandler/**
+
+# Always include the .gitignore file itself
+!.gitignore
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
