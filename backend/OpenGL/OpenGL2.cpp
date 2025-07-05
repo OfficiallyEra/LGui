@@ -9,6 +9,7 @@ GLFWwindow* OpenGL2::Backend_GetWindow()
     return window;
 }
 
+
 void OpenGL2::Backend_Init(int width, int height, const char* title)
 {
     if (!glfwInit()) {
