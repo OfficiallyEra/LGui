@@ -26,21 +26,51 @@ Immediate Mode UI rendering
 🧰 Easily extensible — you own every line
 ## 🧩 Example Usage
 
+- [1] Clone the repository
+- [2] Copy and paste the folders as it is in your project directory
+- [3] And that's it now you can use it in your project !
 ```c++
-LGui::BeginFrame();
-LGui::Text("Hello, World!");
-if (LGui::Button("Click Me")) {
-    std::cout << "Button was clicked!\n";
+#define LGui_OpenGL2
+#include "../core/lgui.h"
+
+int main() {
+    OpenGL2::RegisterBackend();
+
+    const char* targetWindowTitle = "Untitled - Notepad";
+    int counter = 0;
+
+    LGui::Init(800, 600, "LGui Demo", targetWindowTitle);
+
+    while (!glfwWindowShouldClose(OpenGL2::Backend_GetWindow()))
+    {
+        LGui::Begin("LGui");
+
+        LGui::Text("Welcome to LGui!");
+
+        if (LGui::Button("Click Me!")) 
+        {
+            counter++;
+            std::cout << "You clicked the button! ["<<counter<<"] times\n";
+        }
+
+        LGui::EndFrame();
+    }
+
+    LGui::Shutdown();
+    return 0;
 }
-LGui::EndFrame();
 ```
+
+
 
 
 ## 🔧 Backend Flexibility
 
-You choose your renderer with a Single Line of Code
+- ***You choose your backend renderer with a Single Line of Code***
 
-```#define LGui_OpenGL2``` | More backend to come
+- Supported Backend(s) - > **OpenGL2**  | More backend to come
+
+```#define LGui_OpenGL2``` <- *Simple Implimentation*
 
 If no backend is defined, LGui will **alert** you with:
 ```
@@ -50,15 +80,15 @@ If no backend is defined, LGui will **alert** you with:
 More Alert And Error Codes = More easier to understand the Broken part
 ## 📦 Ideal For:
 
-- Game developers
+- ****Game developers****
 
-- Engine builders
+- ****Engine builders****
 
-- Tool creators
+- ****Tool creators****
 
-- Educational and experimental projects
+- ****Educational and experimental projects****
 
-- Anyone who wants Immidiate GUI logic without Immidiate GUI weight
+- ****Anyone who wants Immidiate GUI logic without**** ```Immidiate GUI weight``` 
 
 
 ## 🚧 Actively Growing:
@@ -73,6 +103,7 @@ Future support planned for:
 
 - ```Software``` & ```Vulkan``` backend options
 
+- ```DirectX``` and ```Vulken``` Backend Support
 ## 📜 Update Logs
 
 - ```[07-07-2025]``` [+] Updated backend & added button pressing logic
