@@ -1,8 +1,8 @@
 
-# ?? LGui � Lightweight Immidiate Mode GUI Library
+# 🪶 LGui – Lightweight Immidiate Mode GUI Library
 
 
-LGui is a fast, minimal, and developer-friendly GUI library inspired by ImGui � designed for those who want UI rendering without the bloat. Built from scratch using GLFW + OpenGL2 (pluggable backend system), LGui gives you full control over GUI rendering with a syntax that feels familiar but is faster to set up and easier to customize.
+LGui is a fast, minimal, and developer-friendly GUI library inspired by ImGui — designed for those who want UI rendering without the bloat. Built from scratch using GLFW + OpenGL2 (pluggable backend system), LGui gives you full control over GUI rendering with a syntax that feels familiar but is faster to set up and easier to customize.
 
 
 ## Author
@@ -10,21 +10,21 @@ LGui is a fast, minimal, and developer-friendly GUI library inspired by ImGui � 
 - [@OfficiallyEra](https://github.com/OfficiallyEra)
 
 
-## ? Key Features:
+## ✨ Key Features:
 Immediate Mode UI rendering
 
-?? Backend-agnostic design � OpenGL2 out of the box, more to come
+💡 Backend-agnostic design — OpenGL2 out of the box, more to come
 
-? Zero-dependency core, ultra-light footprint
+⚡ Zero-dependency core, ultra-light footprint
 
-?? Plug-and-play integration � no build headaches
+🔌 Plug-and-play integration — no build headaches
 
-?? Built-in interaction: button clicks, text rendering, mouse hover, etc.
+🖱 Built-in interaction: button clicks, text rendering, mouse hover, etc.
 
-?? Auto-layout & SameLine() logic
+🧱 Auto-layout & SameLine() logic
 
-?? Easily extensible � you own every line
-## ?? Example Usage
+🧰 Easily extensible — you own every line
+## 🧩 Example Usage
 
 ```c++
 LGui::BeginFrame();
@@ -36,7 +36,7 @@ LGui::EndFrame();
 ```
 
 
-## ?? Backend Flexibility
+## 🔧 Backend Flexibility
 
 You choose your renderer with a Single Line of Code
 
@@ -48,7 +48,7 @@ If no backend is defined, LGui will **alert** you with:
 ```
 
 More Alert And Error Codes = More easier to understand the Broken part
-## ?? Ideal For:
+## 📦 Ideal For:
 
 - Game developers
 
@@ -61,7 +61,7 @@ More Alert And Error Codes = More easier to understand the Broken part
 - Anyone who wants Immidiate GUI logic without Immidiate GUI weight
 
 
-## ?? Actively Growing:
+## 🚧 Actively Growing:
 
 Future support planned for:
 
@@ -73,7 +73,7 @@ Future support planned for:
 
 - ```Software``` & ```Vulkan``` backend options
 
-## ?? Update Logs
+## 📜 Update Logs
 
 - ```[07-07-2025]``` [+] Updated backend & added button pressing logic
 - ```[07-07-2025]``` [-] Bug while moving the window - the window is ghosting !
