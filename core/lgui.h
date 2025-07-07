@@ -20,6 +20,9 @@ namespace LGui
     
     void Text(const char* label);
     void SameLine();
+    bool Begin(const char* title);
+    inline bool TWindowBG = true;         // Transparent window background
+    inline bool ClickThrough = false;      // Let mouse pass through
 
     struct Context {
         float cursorX = 10.0f;
@@ -32,7 +35,7 @@ namespace LGui
 
     static Context ctx;
 
-    void Init(int width, int height, const char* title);
+    void Init(int w, int h, const char* title, const char* targetWindowTitle);
     void BeginFrame();
     bool Button(const char* label);
     void EndFrame();
